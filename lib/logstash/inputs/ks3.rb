@@ -36,7 +36,6 @@ class LogStash::Inputs::Ks3 < LogStash::Inputs::Base
   default :codec, "plain"
 
   config :interval, :validate => :number, :default => 60
-
   config :access_key_id, :validate => :string, :default => nil
   config :access_key_secret, :validate => :string, :default => nil
   config :endpoint, :validate => :string, :default => nil
