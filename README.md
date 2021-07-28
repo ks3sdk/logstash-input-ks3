@@ -29,7 +29,7 @@ input {
         "access_key_secret" => "****" # 金山云ks3 sk
         "bucket" => "******" # 金山云ks3 bucket
         "prefix" => "abc"
-        "marker_file" => "."
+        "marker_file" => "./ks3marker"
         "interval" => 60 # 数据同步时间间隔，每60s拉取一次数据
     }
 }

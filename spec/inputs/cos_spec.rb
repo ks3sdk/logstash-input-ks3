@@ -6,12 +6,12 @@ describe LogStash::Inputs::ks3 do
 
   it_behaves_like "an interruptible input plugin" do
     let(:config) { {
-        "endpoint" => 'ks3.ap-guangzhou.myqcloud.com',
+        "endpoint" => "ks3-cn-beijing.ksyun.com",
         "access_key_id" => '*',
         "access_key_secret" => '*',
-        "bucket" => 'bellengao',
-	      "region" => 'ap-guangzhou',
-	      "appId" => '*',
+        "bucket" => "******" # 金山云ks3 bucket
+        "prefix" => "abc"
+        "marker_file" => "."
         "interval" => 60 } }
   end
 

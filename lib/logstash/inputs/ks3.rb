@@ -51,7 +51,7 @@ class LogStash::Inputs::Ks3 < LogStash::Inputs::Base
     @logger.info("Registering ks3 input", :bucket => @bucket, :endpoint => @endpoint)
 
     clientConfig = Ks3ClientConfig.new()
-    clientConfig.setEndpoint("ks3-cn-beijing.ksyun.com")
+    clientConfig.setEndpoint(@endpoint)
 
     hconfig = HttpClientConfig.new()
     clientConfig.setHttpClientConfig(hconfig)
